@@ -16,7 +16,7 @@ NEPAL_TIMEZONE = pytz.timezone('Asia/Kathmandu')
 
 # Time to clear messages (in 24-hour format)
 CLEAR_HOUR = 1
-CLEAR_MINUTE = 25
+CLEAR_MINUTE = 35
 
 class MessageClearer(commands.Cog):
     def __init__(self, bot):
