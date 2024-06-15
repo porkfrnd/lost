@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 import os
 from keepalive import keep_alive
 
-keep_alive()
 # Bot token (replace with your bot token)
 BOT_TOKEN = os.environ.get('token')
 
@@ -17,7 +16,7 @@ NEPAL_TIMEZONE = pytz.timezone('Asia/Kathmandu')
 
 # Time to clear messages (in 24-hour format)
 CLEAR_HOUR = 1
-CLEAR_MINUTE = 15
+CLEAR_MINUTE = 25
 
 class MessageClearer(commands.Cog):
     def __init__(self, bot):
@@ -80,6 +79,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def main():
     await bot.add_cog(MessageClearer(bot))
     await bot.start(BOT_TOKEN)
+    keepalive()
 
 # Run the bot
 if __name__ == "__main__":
