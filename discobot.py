@@ -79,9 +79,9 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def main():
     await bot.add_cog(MessageClearer(bot))
     await bot.start(BOT_TOKEN)
-    keepalive()
 
 # Run the bot
 if __name__ == "__main__":
     import asyncio
     asyncio.run(main())
+    keep_aive()
