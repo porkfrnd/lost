@@ -4,7 +4,7 @@ import pytz
 from datetime import datetime, timedelta
 import os
 from keepalive import keep_alive
-
+keep_alive()
 # Bot token (replace with your bot token)
 BOT_TOKEN = os.environ.get('token')
 
@@ -84,4 +84,3 @@ async def main():
 if __name__ == "__main__":
     import asyncio
     asyncio.run(main())
-    keep_aive()
