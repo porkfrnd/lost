@@ -2,3 +2,4 @@ discord
 pytz
 datetime
 flask
+celery
