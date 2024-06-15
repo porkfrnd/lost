@@ -16,8 +16,8 @@ TARGET_CHANNEL_IDS = [1251398618087292941, 1251398909956460596]
 NEPAL_TIMEZONE = pytz.timezone('Asia/Kathmandu')
 
 # Time to clear messages (in 24-hour format)
-CLEAR_HOUR = 1  # 11:00 AM Nepal Time
-CLEAR_MINUTE = 10 # 25 minutes past the hour
+CLEAR_HOUR = 1
+CLEAR_MINUTE = 15
 
 class MessageClearer(commands.Cog):
     def __init__(self, bot):
