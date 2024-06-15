@@ -1,7 +1,5 @@
 from flask import Flask
 from threading import Thread
-# Configure Celery (can be done outside the function)
-app = Celery('tasks', broker='redis://localhost:6379')  # Replace with your Redis server address
 
 # Flask app (can be defined outside the function)
 flask_app = Flask(__name__)
